@@ -7,7 +7,7 @@ get_header();
   <h1>Olivia's Travels</h1>
   <p>Student, Future Nurse, & Adventurer</p>
   <p>
-    <a class="btn btn-primary btn-front" href="<?php echo site_url('/blog')?>" role="button">MY TRAVEL BLOG</a>
+    <a class="btn btn-primary btn-front" href="<?php echo esc_url( get_permalink( get_option( 'page_for_posts' ) ) ); ?>" role="button">MY TRAVEL BLOG</a>
   </p>
   </div>
 </div>

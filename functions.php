@@ -23,10 +23,7 @@ function blog_scripts() {
 	  wp_enqueue_script('popper.js', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js');
 }
 
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\blog_scripts')
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\blog_scripts');
 
-?>
-
-<?php // Register custom navigation walker
-    require_once('wp_bootstrap_navwalker.php');
-?>
+// Register custom navigation walker
+require_once('wp_bootstrap_navwalker.php');

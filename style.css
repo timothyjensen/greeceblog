@@ -24,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.heading {
   font-weight: 800;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -266,7 +267,8 @@ header.masthead .site-heading {
 }
 
 header.masthead .page-heading h1,
-header.masthead .site-heading h1 {
+header.masthead .site-heading h1,
+header.masthead .site-heading .heading {
   font-size: 50px;
   margin-top: 0;
 }
@@ -283,7 +285,8 @@ header.masthead .site-heading .subheading {
 
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading h1,
-  header.masthead .site-heading h1 {
+  header.masthead .site-heading h1,
+  header.masthead .site-heading .heading  {
     font-size: 80px;
   }
 }
@@ -481,7 +484,7 @@ footer .copyright {
 }
 
 .jumbotron-front {
-  background: 
+  background:
   linear-gradient(
     rgba(255, 255, 255, 0.9),
     20%,

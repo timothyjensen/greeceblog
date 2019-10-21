@@ -8,7 +8,7 @@
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="<?php echo site_url()?>">NU19 Thesseloniki</a>
+      <a class="navbar-brand" href="<?php echo esc_url( site_url() ); ?>">NU19 Thesseloniki</a>
       <button class="navbar-toggler navbar-toggler-right background-gradient" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
       </button>
@@ -26,7 +26,7 @@
     </div>
   </nav>
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url(<?php echo get_theme_file_uri('images/home-bg.jpg')?>)">
+  <header class="masthead" style="background-image: url(<?php echo esc_url( get_theme_file_uri('images/home-bg.jpg') ); ?>)">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">

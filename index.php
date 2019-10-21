@@ -7,7 +7,7 @@ get_header(); ?>
 	while(have_posts()) {
 		the_post(); ?>
 		<div>
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+			<h1><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h1>
 			<div>
 				<p>Posted by <?php the_author_posts_link() ?> on <?php the_time('F j, Y');?> in <?php echo get_the_category_list(', ');?></p>
 			</div>
@@ -21,5 +21,5 @@ get_header(); ?>
 ?>
 </div>
 
-<?php 
+<?php
 get_footer(); ?>

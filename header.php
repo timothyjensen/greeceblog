@@ -32,7 +32,13 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1><?php echo get_option('blogname');?></h1>
+			  <?php
+			  if ( is_singular() ) {
+				  printf( '<span class="heading">%s</span>', get_option( 'blogname' ) );
+			  } else {
+				  printf( '<h1 class="heading">%s</h1>', get_option( 'blogname' ) );
+			  }
+			  ?>
             <span class="subheading"><?php echo get_option('blogdescription');?></span>
           </div>
         </div>

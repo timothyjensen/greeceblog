@@ -1,4 +1,5 @@
 <?php
+namespace EricBurt\GreeceTravelBlog;
 
 function blog_files() {
 	wp_enqueue_style('google-fonts-lora', '//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
@@ -8,13 +9,13 @@ function blog_files() {
 	wp_enqueue_style('blog_main_styles', get_stylesheet_uri(), NULL, microtime());
 }
 
-add_action('wp_enqueue_scripts', 'blog_files');
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\blog_files');
 
 function blog_features() {
 	register_nav_menu('headerMenuLocation', 'Header Menu Location');
 }
 
-add_action('after_setup_theme', 'blog_features');
+add_action('after_setup_theme', __NAMESPACE__ . '\\blog_features');
 
 function blog_scripts() {
 	  wp_enqueue_script('jquery', '//code.jquery.com/jquery-3.3.1.slim.min.js');
@@ -22,7 +23,7 @@ function blog_scripts() {
 	  wp_enqueue_script('popper.js', '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js');
 }
 
-add_action('wp_enqueue_scripts','blog_scripts')
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\blog_scripts')
 
 ?>
 

@@ -14,7 +14,7 @@
             <li class="list-inline-item">
               <a href="https://www.instagram.com/olivia_burt/">
                 <span class="fa-stack fa-lg">
-                  <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
                 </span>
               </a>
             </li>
